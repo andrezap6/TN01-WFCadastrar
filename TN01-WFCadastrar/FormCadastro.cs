@@ -38,7 +38,8 @@ namespace TN01_WFCadastrar
             p1.NomeCompleto = txtNomeCompleto.Text;
             p1.DddTelefone = mkdTelefone.Text;
             p1.DataNascimento = dtpDataNascimento.Value;
-            p1.Escolaridade = cbxEscolaridade.Text;
+            p1.Escolaridade = cbxEscolaridade.SelectedItem?.ToString();
+            p1.RendaMensal = Convert.ToDouble(NudRendaMensal.Value);
 
             if (rdbMasciulino.Checked)
             {
